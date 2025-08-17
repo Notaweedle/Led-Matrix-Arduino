@@ -60,7 +60,7 @@ Open http://192.168.4.1 in your browser.
 
 Use the control page to toggle LEDs and test.
 
-Future Plans
+## Future Plans
 
 LED art panel emulator (patterns, onion-skin animation, frames).
 
@@ -68,7 +68,7 @@ ESP32 as a wireless bridge → talk to a Teensy over Serial for heavier LED anim
 
 Optional MAUI frontend app (C#) for custom UI and controls.
 
-Notes
+## Notes
 
 LCD rows are “paired” (0 with 2, 1 with 3) because of the controller design.
 
