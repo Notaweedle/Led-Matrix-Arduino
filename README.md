@@ -1,9 +1,9 @@
-ESP32 LED Control & LCD Display Project
+# ESP32 LED Control & LCD Display Project
 
 This project uses an ESP32 development board to create a Wi-Fi–controlled LED + LCD display system.
 It’s meant as a prototype for con projects, art displays, and experimenting with microcontrollers.
 
-Features
+## Features
 
 ESP32 Access Point (AP): ESP32 creates its own Wi-Fi hotspot, no external router required.
 
@@ -13,7 +13,7 @@ Toggle LEDs on/off
 
 Future: Pattern control, animations, etc.
 
-LCD (20x4 I²C):
+## LCD (20x4 I²C):
 
 Display text, scrolling messages, and status.
 
