@@ -54,6 +54,7 @@ Flash the ESP32 with this project code.
 Connect to the ESP32 Wi-Fi network:
 
 SSID: "" -Set Your own
+
 Password: "" -Set Your own
 
 Open http://192.168.4.1 in your browser.
