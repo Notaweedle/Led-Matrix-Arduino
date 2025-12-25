@@ -79,4 +79,4 @@ If upload fails → install Silicon Labs CP2102 USB driver and check correct COM
 
 License
 
-MIT – do whatever you like, just don’t sue me if it breaks 😅
+MIT – do whatever you like, just don’t sue me if it breaks
