@@ -1,0 +1,82 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>LED Panel Editor</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="../../assets/css/main.css">
+
+<div id="left">
+    <canvas id="canvas"></canvas>
+</div>
+
+<div id="right">
+    <h2>Display</h2>
+    <div class="row"><label>Pixel size</label>
+        <input id="px" type="range" min="6" max="36" value="18"></div>
+    <div class="row"><label>Show grid</label>
+        <input id="showGrid" type="checkbox" checked></div>
+    <div class="row"><label>Use panels</label>
+        <input id="usePanels" type="range" min="1" max="4" value="4"><span id="usePanelsVal">4</span></div>
+    <div class="row"><label>Cols/Rows</label>
+        <input id="cols" type="number" min="2" max="128" value="16"><input id="rows" type="number" min="2" max="128" value="16"><button id="applySize">Apply</button></div>
+
+    <div class="sep"></div>
+    <h2>Tools</h2>
+    <div class="row">
+        <label class="small"><input type="radio" name="tool" value="paint" checked> Paint</label>
+        <label class="small"><input type="radio" name="tool" value="erase"> Erase</label>
+        <label class="small"><input type="radio" name="tool" value="eyedrop"> Eyedrop (R-click)</label>
+    </div>
+    <div class="row"><label>Color</label><input id="color" type="color" value="#ff0080"><button id="clear">Clear</button></div>
+    <div class="sep"></div>
+
+    <h2>Animator</h2>
+    <div class="row"><label>Frame</label><span id="frameLabel">1/1</span></div>
+    <div class="row">
+        <button id="prev">◀ Prev</button>
+        <button id="next">Next ▶</button>
+        <button id="add">+ Add</button>
+    </div>
+    <div class="row">
+        <button id="dup">⧉ Duplicate</button>
+        <button id="del">🗑 Delete</button>
+    </div>
+    <div class="row">
+        <button id="play">▶ Play</button>
+        <button id="stop">■ Stop</button>
+        <label class="small">FPS</label><input id="fps" type="number" min="1" max="60" value="12">
+    </div>
+    <div class="row">
+        <label>Onion prev</label><input id="onPrev" type="checkbox" checked>
+        <label>next</label><input id="onNext" type="checkbox" checked>
+    </div>
+
+    <div class="row">
+        <label>Onion strength</label>
+        <input id="onAlpha" type="range" min="0.2" max="0.95" step="0.05" value="0.6">
+    </div>
+    <div class="sep"></div>
+
+    <h2>Project</h2>
+    <div class="row">
+        <button id="saveProj">Save Project</button>
+        <input id="loadFile" type="file" accept=".json,.ledproj">
+        <button id="loadProj">Load</button>
+    </div>
+
+    <div class="row">
+        <button id="exportSprite">Export Sprite</button>
+        <input id="importSpriteFile" type="file" accept=".json">
+        <button id="importSprite">Import Sprite</button>
+    </div>
+
+    <div class="sep"></div>
+    <h2>Device (optional)</h2>
+    <div class="row">
+        <input id="baseUrl" type="text" placeholder="http://192.168.4.1">
+        <button id="connect">Connect</button>
+    </div>
+    <div id="status">Local preview (no device)</div>
+</div>
+
+
+<script src="Editor.js"></script>
